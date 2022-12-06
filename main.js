@@ -14,10 +14,9 @@ workerProcess.stderr.on('data', function(data) {
 });
 
 workerProcess.on('close', function(code) {
-	
+
 });
 
 workerProcess.on('exit', function (code) {
-	console.log("666")
     worker_process = child_process.fork("app.js", [1]);
 });
